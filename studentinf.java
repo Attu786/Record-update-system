@@ -1,6 +1,6 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
+/**
+ *
+ * @author Akarshit kashyap
  */
 import java.sql.*;
 import java.util.Vector;
@@ -8,14 +8,11 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
-/**
- *
- * @author Akarshit kashyap
- */
+
 public class studentinf extends javax.swing.JFrame {
 
     /**
-     * Creates new form
+     * Form creating area
      */
     public studentinf() {
         initComponents();
@@ -26,7 +23,7 @@ public class studentinf extends javax.swing.JFrame {
     Connection con;
     PreparedStatement pst;
     
-
+//MYSQL server connection section
    public void Connect()
    {
         try {
@@ -41,7 +38,7 @@ public class studentinf extends javax.swing.JFrame {
    
    }
    
-   
+   // table update section
    
    private void table_update()
    {
@@ -77,8 +74,7 @@ public class studentinf extends javax.swing.JFrame {
    
    
    
-    @SuppressWarnings("unchecked")
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+   // setting up the frame 
     private void initComponents() {
 
         popupMenu1 = new java.awt.PopupMenu();
@@ -286,7 +282,7 @@ public class studentinf extends javax.swing.JFrame {
         );
 
         pack();
-    }// </editor-fold>//GEN-END:initComponents
+    }
 
     private void button1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button1ActionPerformed
         
@@ -349,15 +345,8 @@ public class studentinf extends javax.swing.JFrame {
         
     }//GEN-LAST:event_jTable1MouseClicked
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
+        
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
